@@ -6,7 +6,7 @@
 ********************************* */
 :root {
 
-    --color-main-one: #FFA500;
+    --color-main-one:#FFFFFF;
     --color-main-two: #00804B;
     --color-main-tree: #FFFFFF;
     --color-main-four: #121212;
@@ -58,28 +58,6 @@ img {
     display: block;
 }
 
-/* LOADER PARA AGUARDAR CARREGAMENTO DA PÃGINA 
-*********************************************** */
-.loader {
-    background-color: #121212;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 300;
-}
-
-.loading {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border-top: 3px solid var(--color-main-one);
-    animation: loader 1s linear infinite;
-}
-
 
 @keyframes loader {
     0% {
@@ -91,30 +69,6 @@ img {
     }
 }
 
-/* PERSONALIZAR BARRA DE ROLAGEM DO NAVEGADOR 
-********************************************** */
-
-
-/* Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-main-six) var(--color-main-one);
-}
-
-/*Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    width: 12px;
-}
-
-*::-webkit-scrollbar-track {
-    background: var(--color-main-one);
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: var(--color-main-six);
-    border-radius: 20px;
-    border: 3px solid var(--color-main-one);
-}
 
 /* HEADER
 ********************************* */
@@ -182,7 +136,7 @@ header {
 /* ANIMATION NAV
 ********************************* */
 nav.sticky {
-    background: var(--color-main-one);
+    background: #191919;
     padding: 20px 90px;
 }
 
@@ -192,11 +146,11 @@ nav.sticky .menu-mobile i {
 
 nav.sticky,
 nav.sticky ul li a {
-    color: var(--color-main-four);
+    color: #FF9800;
 
 }
 nav.sticky .logoh{
-    color: var(--color-main-four);
+    color: #FF9800;
 }
 nav.sticky .logoh:hover{
     color:white;
@@ -209,10 +163,6 @@ nav.sticky .logoh:hover{
     padding-top: 5%;
 }
 
-svg {
-    width: 40px;
-    height: 40px;
-}
 
 .sticky svg path {
     fill: var(--background-one);
@@ -446,13 +396,6 @@ svg {
     color: var(--background-two);
 }
 
-/* animatiÃ§Ã£o icones midia-social */
-/* .social:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: all 0.5s scale(1.2) ease;
-    transition: all 0.5s ease-in-out;
-} */
 
 /* ABOUT SECTION
 ********************************* */
@@ -493,11 +436,10 @@ svg {
 }
 
 .about-left .about-img {
-    border: 20px solid var(--color-main-one);
+   /* border: 20px solid var(--color-main-one);*/
     width: 320px;
     height: 320px;
     position: relative;
-
     opacity: 0;
     animation: moveRightToLeft 0.5s forwards;
 }
@@ -505,8 +447,9 @@ svg {
 .about-left .about-img img {
     width: 100%;
     height: 280px;
+    border-radius: 10px;
     position: absolute;
-    bottom: 0%;
+    bottom: 10%;
     left: 0%;
     object-fit: cover;
     border: none;
@@ -575,15 +518,6 @@ svg {
     animation: moveLeftToRight 1s 1.7s forwards;
 }
 
-
-
-.about-right .tecnolgys {
-    width: 100%;
-    max-width: 350px;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
-}
 
 .about-right .tecnolgys h5 {
     color: var(--color-main-one);
@@ -1605,7 +1539,7 @@ main {
         max-width: 350px;
         margin: 0 auto;
         padding: 2%;
-        background-image: url(../img/perfil.jpg);
+        background-image: url(imagem.jpg);
         object-fit: cover;
         background-position: center;
     }
