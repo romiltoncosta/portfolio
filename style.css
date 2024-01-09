@@ -536,7 +536,10 @@ nav.sticky .logoh:hover{
     opacity: 0;
     animation: moveLeftToRight 1s 1s forwards;
 }
-
+.fa-brands{
+    color: #f5f7fa;
+    margin-right:1rem;
+}
 /* ANIMAÃ‡ÃƒO PARA IMAGEM E MOLDURA DA PAGINA SOBRE(ABOUT) */
 @keyframes moveLeftToRight {
     0% {
