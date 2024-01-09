@@ -99,10 +99,11 @@ img {
 .skills-list{
     display: flex;
     flex-direction: row;
-    flex: 1 1 300px;
-    max-width: 360px;
+    flex-wrap:wrap;
     color: var(--color-main-five);
     margin: 0 auto;
+    width: 100%;
+    padding-top: 3%;
    
 }
 .skills-list>li{
